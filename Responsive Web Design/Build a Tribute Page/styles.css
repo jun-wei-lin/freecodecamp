@@ -1,0 +1,12 @@
+body{
+  background:#f5f6f0;
+  color:#1b1b32;
+  font-family:Helvetica;
+  margin:10px;
+}
+img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  
+}
