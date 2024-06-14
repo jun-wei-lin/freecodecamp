@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PHP</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <main id="main-doc">
+    <div class="div-doc">
+    <section class="main-section" id="Copyight">
+      <header>Copyight</header>
+      <p>Copyright © 1997 - 2024 by the PHP Documentation Group. This material may be distributed only subject to the terms and conditions set forth in the Creative Commons Attribution 3.0 License or later. A copy of the Creative Commons Attribution 3.0 license is distributed with this manual. The latest version is presently available at » http://creativecommons.org/licenses/by/3.0/.</p>
+      <p>If you are interested in redistribution or republishing of this document in whole or in part, either modified or unmodified, and you have questions, please contact the Copyright holders at » doc-license@lists.php.net. Note that this address is mapped to a publicly archived mailing list.</p>
+
+    <h3>Improve This Page</h3>
+    <ul>
+      <li>Learn How To Improve This Page</li>
+      <li>Submit a Pull Request </li>
+      <li>Report a Bug</li>
+    </ul>
+
+    <h3>User Contributed Notes</h3>
+    <p>There are no user contributed notes for this page.</p>
+
+    </section>
+
+    <section class="main-section" id="PHP_Manual">
+      <header>PHP Manual</header>
+      <ul>
+        <li>Preface</li>
+      </ul>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+      
+    </section>
+
+    <section class="main-section" id="Getting_Started">
+      <header>Getting Started</header>
+     
+      <h3>Introduction</h3>
+      <ul>
+        <li>What is PHP</li>
+        <li>What can PHP do？</li>  
+      </ul>
+      <h3>A simple tutorial</h3>
+      <ul>
+        <li>What do I need</li>
+        <li>Your first PHP-enabled page</li>  
+        <li>Something Useful
+        <li>Dealing with Forms</li>
+        <li>What's next?</li>
+      </ul>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+
+    <section class="main-section" id="Installation_and_Configuration">
+      <header>Installation and Configuration</header>
+      <h3> General Installation Considerations</h3>
+      <h3>Installation on Unix systems</h3>
+      <ul>
+        <li>Apache 2.x on Unix systems</li>
+        <li>Nginx 1.4.x on Unix systems</li>
+        <li>Lighttpd 1.4 on Unix systems</li>
+        <li>LiteSpeed Web Server/OpenLiteSpeed Web Server on Unix systems</li>
+        <li>CGI and command line setups</li>
+        <li>OpenBSD installation notes</li>
+        <li>Solaris specific installation tips</li>
+        <li>Debian GNU/Linux installation notes</li>
+      </ul>
+      <h3>Installation on macOS</h3>
+      <ul>
+        <li>Using Packages</li>
+        <li>Using the bundled PHP prior to macOS Monterey</li>
+        <li>Compiling PHP on macOS</li>
+      </ul>
+       <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+
+    <section class="main-section" id="Language_Reference">
+      <header>Language Reference</header>
+      <h3>Basic syntax</h3>
+        <ul>
+          <li>PHP tags</li>
+          <li>Escaping from HTML</li>
+          <li>Instruction separation</li>
+          <li>Comments</li>
+        </ul>
+      <ul>
+        <li>Introduction</li>
+        <li>Type System</li>
+        <li>NULL</li>
+        <li>Booleans</li>
+        <li>Integers</li>
+        <li>Floating point numbers</li>
+        <li>Strings</li>
+        <li>Numeric strings</li>
+        <li>Arrays</li>
+        <li>Objects</li>
+        <li>Enumerations</li>
+        <li>Resources</li>
+        <li>Callbacks / Callables</li>
+        <li>Mixed</li>
+        <li>Void</li>
+        <li>Never</li>
+        <li>Relative class types</li>
+        <li>Value types</li>
+        <li>Iterables</li>
+        <li>Type declarations</li>
+        <li>Type Juggling</li>
+      </ul>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+    
+    <section class="main-section" id="Security">
+      <header>Security</header>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <em>k</em>
+      <p>
+     <code><span>How about not putting the php code in the web-root at all...?<br><br>You can create a public directory with the css, html, etc and index.php there. Then use the include_path setting to point to the actual php code, eg...<br><br>webstuff<br>  phpcode<br>  public<br>    images<br>    css<br>    index.php<br><br>then set the include path to "../phpcode" and, as php is executed from the directory of the script, all should be well.<br><br>I'd also call the main index "main.page", or something else, instead of "index.php" and change the web server default index page. That way you cant get hit by things trawlling the web for index pages.</span></code></p>
+      <em>ocrow at simplexity dot net</em>
+      <p><code><span>If your PHP pages include() or require() files that live within the web server document root, for example library files in the same directory as the PHP pages, you must account for the possibility that attackers may call those library files directly.  <br><br>Any program level code in the library files (ie code not part of function definitions) will be directly executable by the caller outside of the scope of the intended calling sequence.  An attacker may be able to leverage this ability to cause unintended effects.<br><br>The most robust way to guard against this possibility is to prevent your webserver from calling the library scripts directly, either by moving them out of the document root, or by putting them in a folder configured to refuse web server access. With Apache for example, create a .htaccess file in the library script folder with these directives:<br><br>Order Allow,Deny<br>Deny from any</span></code></p>
+<em>dangan at blackjaguargaming dot net</em>
+<p><code><span>I'd recommend a 404 over a 403 considering a 403 proves there is something worth hacking into.<br><br>index.php:<br><span class="default">&lt;?php<br>define</span><span class="keyword">(</span><span class="string">'isdoc'</span><span class="keyword">,</span><span class="default">1</span><span class="keyword">);<br>include(</span><span class="string">'includes/include.sqlfunctions.php'</span><span class="keyword">);<br></span><span class="comment">// Rest of code for index.php<br></span><span class="default">?&gt;<br></span><br>include.sqlfunctions.php (or other include file):<br><span class="default">&lt;?php<br></span><span class="keyword">if(</span><span class="default">isdoc </span><span class="keyword">!== </span><span class="default">1</span><span class="keyword">) </span><span class="comment">// Not identical to 1<br></span><span class="keyword">{<br>    </span><span class="default">header</span><span class="keyword">(</span><span class="string">'HTTP/1.1 404 Not Found'</span><span class="keyword">);<br>    echo </span><span class="string">"&lt;!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"&gt;\n&lt;html&gt;&lt;head&gt;\n&lt;title&gt;404 Not Found&lt;/title&gt;\n&lt;/head&gt;"</span><span class="keyword">;<br>    echo </span><span class="string">"&lt;body&gt;\n&lt;h1&gt;Not Found&lt;/h1&gt;\n&lt;p&gt;The requested URL "</span><span class="keyword">.</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">'REQUEST_URI'</span><span class="keyword">].</span><span class="string">" was not found on this server.&lt;/p&gt;\n"</span><span class="keyword">;<br>    echo </span><span class="string">"&lt;hr&gt;\n"</span><span class="keyword">.</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">'SERVER_SIGNATURE'</span><span class="keyword">].</span><span class="string">"\n&lt;/body&gt;&lt;/html&gt;\n"</span><span class="keyword">;<br>    </span><span class="comment">// Echo output similar to Apache's default 404 (if thats what you're using)<br>    </span><span class="keyword">exit;<br>}<br></span><span class="comment">// Rest of code for this include<br></span><span class="default">?&gt;</span></span></code></p>
+<em>djjokla AT gmail dot com</em>
+<p><code><span class="html">If a single file has to be included than I use the following<br><br>index.php ( where the file is gonna be included )<br>___________<br><span class="default">&lt;?php<br>    define</span><span class="keyword">(</span><span class="string">'thefooter'</span><span class="keyword">, </span><span class="default">TRUE</span><span class="keyword">);<br>    include(</span><span class="string">'folder/footer.inc.php'</span><span class="keyword">);<br></span><span class="default">?&gt;<br></span><br>and the footer file (for example) looks this way then<br><br>footer.inc.php ( the file to be inluded )<br>___________<br><span class="default">&lt;?php<br>    defined</span><span class="keyword">(</span><span class="string">'thefooter'</span><span class="keyword">) or die(</span><span class="string">'Not with me my friend'</span><span class="keyword">);<br>    echo(</span><span class="string">'Copyright to me in the year 2000'</span><span class="keyword">);<br></span><span class="default">?&gt;<br></span><br>So when someone tries to access the footer.php file directly he/she/it will get the "Not with me my friend" messages written on the screen. An alternative option is to redirect the person who wants to access the file directly to a different location, so instead of the above code you would have to write the following in the footer.inc.php file.<br><br><span class="default">&lt;?php<br>    defined</span><span class="keyword">(</span><span class="string">'thefooter'</span><span class="keyword">) or </span><span class="default">header</span><span class="keyword">(</span><span class="string">'Location: <a href="http://www.location.com" rel="nofollow" target="_blank">http://www.location.com</a>'</span><span class="keyword">);<br>    echo(</span><span class="string">'Copyright to me in the year 2000'</span><span class="keyword">);<br></span><span class="default">?&gt;<br></span><br>In normal case a redirection to an external site would be annoying to the visitor, but since this visitor is more interested in hacking the site than in reading the content, I think it's only fair to create such an redirection. We dont' realy want someome like this on our sites.<br><br>For the file protection I use .htaccess in which I say to protect the file itself and every .inc file<br><br>&lt;Files ~ "^.*\.([Hh][Tt]|[Ii][Nn][Cc])"&gt;<br>Order allow,deny<br>Deny from all<br>Satisfy All<br>&lt;/Files&gt;<br><br>The .htaccess file should result an Error 403 if someone tries to access the files directly. If for some reason this shouldn't work, then the "Not with me my friend" text apears or a redirection (depending what is used)<br><br>In my eyes this looks o.k. and safe.</span></code></p>
+<em>Thomas "Balu" Walter</em>
+<p><code><span class="html">Since many users can not modify apache configurations or use htaccess files, the best way to avoid unwanted access to include files would be a line at the beginning of the include-file:<br><br><span class="default">&lt;?php </span><span class="keyword">if (!</span><span class="default">defined</span><span class="keyword">(</span><span class="string">'APPLICATION'</span><span class="keyword">)) exit; </span><span class="default">?&gt;<br></span><br>And in all files that are allowed to be called externally:<br><br><span class="default">&lt;?php define</span><span class="keyword">(</span><span class="string">'APPLICATION'</span><span class="keyword">, </span><span class="default">true</span><span class="keyword">); </span><span class="default">?&gt;<br></span><br>     Balu</span></code></p>
+    </section>
+
+    <section class="main-section" id="Features">
+      <header>Features</header>
+      <ul class="chunklist chunklist_book"><li><a href="features.http-auth.php">HTTP authentication with PHP</a></li><li><a href="features.cookies.php">Cookies</a></li><li><a href="features.sessions.php">Sessions</a></li><li><a href="features.xforms.php">Dealing with XForms</a></li><li><a href="features.file-upload.php">Handling file uploads</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="features.file-upload.post-method.php">POST method uploads</a></li><li><a href="features.file-upload.errors.php">Error Messages Explained</a></li><li><a href="features.file-upload.common-pitfalls.php">Common Pitfalls</a></li><li><a href="features.file-upload.multiple.php">Uploading multiple files</a></li><li><a href="features.file-upload.put-method.php">PUT method support</a></li><li><a href="features.file-upload.errors.seealso.php">See Also</a></li></ul></li><li><a href="features.remote-files.php">Using remote files</a></li><li><a href="features.connection-handling.php">Connection handling</a></li><li><a href="features.persistent-connections.php">Persistent Database Connections</a></li><li><a href="features.commandline.php">Command line usage</a> — Using PHP from the command line<ul class="chunklist chunklist_book chunklist_children"><li><a href="features.commandline.differences.php">Differences to other SAPIs</a></li><li><a href="features.commandline.options.php">Options</a> — Command line options</li><li><a href="features.commandline.usage.php">Usage</a> — Executing PHP files</li><li><a href="features.commandline.io-streams.php">I/O streams</a> — Input/output streams</li><li><a href="features.commandline.interactive.php">Interactive shell</a></li><li><a href="features.commandline.webserver.php">Built-in web server</a></li><li><a href="features.commandline.ini.php">INI settings</a></li></ul></li><li><a href="features.gc.php">Garbage Collection</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="features.gc.refcounting-basics.php">Reference Counting Basics</a></li><li><a href="features.gc.collecting-cycles.php">Collecting Cycles</a></li><li><a href="features.gc.performance-considerations.php">Performance Considerations</a></li></ul></li><li><a href="features.dtrace.php">DTrace Dynamic Tracing</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="features.dtrace.introduction.php">Introduction to PHP and DTrace</a></li><li><a href="features.dtrace.dtrace.php">Using PHP and DTrace</a></li><li><a href="features.dtrace.systemtap.php">Using SystemTap with PHP DTrace Static Probes</a></li></ul></li></ul>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+    
+    <section class="main-section" id="Function_Reference">
+      <header>Function Reference</header>
+<ul class="chunklist chunklist_set"><li><a href="refs.basic.php.php">Affecting PHP's Behaviour</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.apcu.php">APCu</a> — APC User Cache</li><li><a href="book.componere.php">Componere</a></li><li><a href="book.errorfunc.php">Error Handling</a> — Error Handling and Logging</li><li><a href="book.ffi.php">FFI</a> — Foreign Function Interface</li><li><a href="book.opcache.php">OPcache</a></li><li><a href="book.outcontrol.php">Output Control</a> — Output Buffering Control</li><li><a href="book.info.php">PHP Options/Info</a> — PHP Options and Information</li><li><a href="book.phpdbg.php">phpdbg</a> — Interactive PHP Debugger</li><li><a href="book.runkit7.php">runkit7</a></li><li><a href="book.uopz.php">uopz</a> — User Operations for Zend</li><li><a href="book.wincache.php">WinCache</a> — Windows Cache for PHP</li><li><a href="book.xhprof.php">Xhprof</a> — Hierarchical Profiler</li><li><a href="book.yac.php">Yac</a></li></ul></li><li><a href="refs.utilspec.audio.php">Audio Formats Manipulation</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.openal.php">OpenAL</a> — OpenAL Audio Bindings</li></ul></li><li><a href="refs.remote.auth.php">Authentication Services</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.radius.php">Radius</a></li></ul></li><li><a href="refs.utilspec.cmdline.php">Command Line Specific Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.readline.php">Readline</a> — GNU Readline</li></ul></li><li><a href="refs.compression.php">Compression and Archive Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.bzip2.php">Bzip2</a></li><li><a href="book.lzf.php">LZF</a></li><li><a href="book.phar.php">Phar</a></li><li><a href="book.rar.php">Rar</a> — Rar Archiving</li><li><a href="book.zip.php">Zip</a></li><li><a href="book.zlib.php">Zlib</a> — Zlib Compression</li></ul></li><li><a href="refs.crypto.php">Cryptography Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.hash.php">Hash</a> — HASH Message Digest Framework</li><li><a href="book.mcrypt.php">Mcrypt</a></li><li><a href="book.mhash.php">Mhash</a></li><li><a href="book.openssl.php">OpenSSL</a></li><li><a href="book.password.php">Password Hashing</a></li><li><a href="book.rnp.php">Rnp</a></li><li><a href="book.sodium.php">Sodium</a></li></ul></li><li><a href="refs.database.php">Database Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="refs.database.abstract.php">Abstraction Layers</a></li><li><a href="refs.database.vendors.php">Vendor Specific Database Extensions</a></li></ul></li><li><a href="refs.calendar.php">Date and Time Related Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.calendar.php">Calendar</a></li><li><a href="book.datetime.php">Date/Time</a> — Date and Time</li><li><a href="book.hrtime.php">HRTime</a> — High resolution timing</li></ul></li><li><a href="refs.fileprocess.file.php">File System Related Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.dio.php">Direct IO</a></li><li><a href="book.dir.php">Directories</a></li><li><a href="book.fileinfo.php">Fileinfo</a> — File Information</li><li><a href="book.filesystem.php">Filesystem</a></li><li><a href="book.inotify.php">Inotify</a></li><li><a href="book.xattr.php">xattr</a></li><li><a href="book.xdiff.php">xdiff</a></li></ul></li><li><a href="refs.international.php">Human Language and Character Encoding Support</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.enchant.php">Enchant</a> — Enchant spelling library</li><li><a href="book.gender.php">Gender</a> — Determine gender of firstnames</li><li><a href="book.gettext.php">Gettext</a></li><li><a href="book.iconv.php">iconv</a></li><li><a href="book.intl.php">intl</a> — Internationalization Functions</li><li><a href="book.mbstring.php">Multibyte String</a></li><li><a href="book.pspell.php">Pspell</a></li><li><a href="book.recode.php">Recode</a> — GNU Recode</li></ul></li><li><a href="refs.utilspec.image.php">Image Processing and Generation</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.exif.php">Exif</a> — Exchangeable image information</li><li><a href="book.image.php">GD</a> — Image Processing and GD</li><li><a href="book.gmagick.php">Gmagick</a></li><li><a href="book.imagick.php">ImageMagick</a> — Image Processing (ImageMagick)</li></ul></li><li><a href="refs.remote.mail.php">Mail Related Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.imap.php">IMAP</a> — IMAP, POP3 and NNTP</li><li><a href="book.mail.php">Mail</a></li><li><a href="book.mailparse.php">Mailparse</a></li></ul></li><li><a href="refs.math.php">Mathematical Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.bc.php">BC Math</a> — BCMath Arbitrary Precision Mathematics</li><li><a href="book.gmp.php">GMP</a> — GNU Multiple Precision</li><li><a href="book.math.php">Math</a> — Mathematical Functions</li><li><a href="book.stats.php">Statistics</a></li><li><a href="book.trader.php">Trader</a> — Technical Analysis for Traders</li></ul></li><li><a href="refs.utilspec.nontext.php">Non-Text MIME Output</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.fdf.php">FDF</a> — Forms Data Format</li><li><a href="book.gnupg.php">GnuPG</a> — GNU Privacy Guard</li><li><a href="book.wkhtmltox.php">wkhtmltox</a></li><li><a href="book.ps.php">PS</a> — PostScript document creation</li><li><a href="book.rpminfo.php">RpmInfo</a></li><li><a href="book.xlswriter.php">XLSWriter</a></li></ul></li><li><a href="refs.fileprocess.process.php">Process Control Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.eio.php">Eio</a></li><li><a href="book.ev.php">Ev</a></li><li><a href="book.expect.php">Expect</a></li><li><a href="book.pcntl.php">PCNTL</a> — Process Control</li><li><a href="book.posix.php">POSIX</a></li><li><a href="book.exec.php">Program execution</a> — System program execution</li><li><a href="book.parallel.php">parallel</a></li><li><a href="book.pthreads.php">pthreads</a></li><li><a href="book.sem.php">Semaphore</a> — Semaphore, Shared Memory and IPC</li><li><a href="book.shmop.php">Shared Memory</a></li><li><a href="book.sync.php">Sync</a></li></ul></li><li><a href="refs.basic.other.php">Other Basic Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.geoip.php">GeoIP</a> — Geo IP Location</li><li><a href="book.fann.php">FANN</a> — FANN (Fast Artificial Neural Network)</li><li><a href="book.igbinary.php">Igbinary</a></li><li><a href="book.json.php">JSON</a> — JavaScript Object Notation</li><li><a href="book.simdjson.php">Simdjson</a></li><li><a href="book.lua.php">Lua</a></li><li><a href="book.luasandbox.php">LuaSandbox</a></li><li><a href="book.misc.php">Misc.</a> — Miscellaneous Functions</li><li><a href="book.random.php">Random</a> — Random Number Generators and Functions Related to Randomness</li><li><a href="book.seaslog.php">Seaslog</a></li><li><a href="book.spl.php">SPL</a> — Standard PHP Library (SPL)</li><li><a href="book.stream.php">Streams</a></li><li><a href="book.swoole.php">Swoole</a></li><li><a href="book.tidy.php">Tidy</a></li><li><a href="book.tokenizer.php">Tokenizer</a></li><li><a href="book.url.php">URLs</a></li><li><a href="book.v8js.php">V8js</a> — V8 Javascript Engine Integration</li><li><a href="book.yaml.php">Yaml</a> — YAML Data Serialization</li><li><a href="book.yaf.php">Yaf</a> — Yet Another Framework</li><li><a href="book.yaconf.php">Yaconf</a></li><li><a href="book.taint.php">Taint</a></li><li><a href="book.ds.php">Data Structures</a></li><li><a href="book.var_representation.php">var_representation</a></li></ul></li><li><a href="refs.remote.other.php">Other Services</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.curl.php">cURL</a> — Client URL Library</li><li><a href="book.event.php">Event</a></li><li><a href="book.ftp.php">FTP</a></li><li><a href="book.gearman.php">Gearman</a></li><li><a href="book.ldap.php">LDAP</a> — Lightweight Directory Access Protocol</li><li><a href="book.memcache.php">Memcache</a></li><li><a href="book.memcached.php">Memcached</a></li><li><a href="book.mqseries.php">mqseries</a></li><li><a href="book.network.php">Network</a></li><li><a href="book.rrd.php">RRD</a> — RRDtool</li><li><a href="book.scoutapm.php">ScoutAPM</a></li><li><a href="book.snmp.php">SNMP</a></li><li><a href="book.sockets.php">Sockets</a></li><li><a href="book.ssh2.php">SSH2</a> — Secure Shell2</li><li><a href="book.stomp.php">Stomp</a> — Stomp Client</li><li><a href="book.svm.php">SVM</a> — Support Vector Machine</li><li><a href="book.svn.php">SVN</a> — Subversion</li><li><a href="book.tcpwrap.php">TCP</a> — TCP Wrappers</li><li><a href="book.varnish.php">Varnish</a></li><li><a href="book.yaz.php">YAZ</a></li><li><a href="book.zmq.php">0MQ messaging</a> — ZMQ</li><li><a href="book.zookeeper.php">ZooKeeper</a></li></ul></li><li><a href="refs.search.php">Search Engine Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.solr.php">Solr</a> — Apache Solr</li></ul></li><li><a href="refs.utilspec.server.php">Server Specific Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.apache.php">Apache</a></li><li><a href="book.fpm.php">FastCGI Process Manager</a></li></ul></li><li><a href="refs.basic.session.php">Session Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.session.php">Sessions</a> — Session Handling</li></ul></li><li><a href="refs.basic.text.php">Text Processing</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.cmark.php">CommonMark</a></li><li><a href="book.parle.php">Parle</a> — Parsing and lexing</li><li><a href="book.pcre.php">PCRE</a> — Regular Expressions (Perl-Compatible)</li><li><a href="book.ssdeep.php">ssdeep</a> — ssdeep Fuzzy Hashing</li><li><a href="book.strings.php">Strings</a></li></ul></li><li><a href="refs.basic.vartype.php">Variable and Type Related Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.array.php">Arrays</a></li><li><a href="book.classobj.php">Classes/Objects</a> — Class/Object Information</li><li><a href="book.ctype.php">Ctype</a> — Character type checking</li><li><a href="book.filter.php">Filter</a> — Data Filtering</li><li><a href="book.funchand.php">Function Handling</a></li><li><a href="book.quickhash.php">Quickhash</a></li><li><a href="book.reflection.php">Reflection</a></li><li><a href="book.var.php">Variable handling</a></li></ul></li><li><a href="refs.webservice.php">Web Services</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.oauth.php">OAuth</a></li><li><a href="book.soap.php">SOAP</a></li><li><a href="book.yar.php">Yar</a> — Yet Another RPC Framework</li><li><a href="book.xmlrpc.php">XML-RPC</a></li></ul></li><li><a href="refs.utilspec.windows.php">Windows Only Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.com.php">COM</a> — COM and .Net (Windows)</li><li><a href="book.win32service.php">win32service</a></li></ul></li><li><a href="refs.xml.php">XML Manipulation</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.dom.php">DOM</a> — Document Object Model</li><li><a href="book.libxml.php">libxml</a></li><li><a href="book.simplexml.php">SimpleXML</a></li><li><a href="book.wddx.php">WDDX</a></li><li><a href="book.xmldiff.php">XMLDiff</a> — XML diff and merge</li><li><a href="book.xml.php">XML Parser</a></li><li><a href="book.xmlreader.php">XMLReader</a></li><li><a href="book.xmlwriter.php">XMLWriter</a></li><li><a href="book.xsl.php">XSL</a></li></ul></li><li><a href="refs.ui.php">GUI Extensions</a><ul class="chunklist chunklist_set chunklist_children"><li><a href="book.ui.php">UI</a></li></ul></li></ul>
+      
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+
+    <section class="main-section" id="FAQ">
+      <header>FAQ</header>
+      <ul class="chunklist chunklist_book"><li><a href="faq.general.php">General Information</a></li><li><a href="faq.mailinglist.php">Mailing lists</a></li><li><a href="faq.obtaining.php">Obtaining PHP</a></li><li><a href="faq.databases.php">Database issues</a></li><li><a href="faq.installation.php">Installation</a></li><li><a href="faq.build.php">Build Problems</a></li><li><a href="faq.using.php">Using PHP</a></li><li><a href="faq.passwords.php">Password Hashing</a> — Safe Password Hashing</li><li><a href="faq.html.php">PHP and HTML</a></li><li><a href="faq.com.php">PHP and COM</a></li><li><a href="faq.misc.php">Miscellaneous Questions</a></li></ul>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+
+    <section class="main-section" id="Appendices">
+      <header>Appendices</header>
+      <ul class="chunklist chunklist_book"><li><a href="history.php">History of PHP and Related Projects</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="history.php.php">History of PHP</a></li><li><a href="history.php.related.php">History of PHP related projects</a></li><li><a href="history.php.books.php">Books about PHP</a></li><li><a href="history.php.publications.php">Publications about PHP</a></li></ul></li><li><a href="migration83.php">Migrating from PHP 8.2.x to PHP 8.3.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration83.new-features.php">New Features</a></li><li><a href="migration83.new-classes.php">New Classes and Interfaces</a></li><li><a href="migration83.new-functions.php">New Functions</a></li><li><a href="migration83.constants.php">New Global Constants</a></li><li><a href="migration83.incompatible.php">Backward Incompatible Changes</a></li><li><a href="migration83.deprecated.php">Deprecated Features</a></li><li><a href="migration83.other-changes.php">Other Changes</a></li><li><a href="migration83.windows-support.php">Windows Support</a></li></ul></li><li><a href="migration82.php">Migrating from PHP 8.1.x to PHP 8.2.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration82.new-features.php">New Features</a></li><li><a href="migration82.new-functions.php">New Functions</a></li><li><a href="migration82.constants.php">New Global Constants</a></li><li><a href="migration82.incompatible.php">Backward Incompatible Changes</a></li><li><a href="migration82.deprecated.php">Deprecated Features</a></li><li><a href="migration82.other-changes.php">Other Changes</a></li><li><a href="migration82.windows-support.php">Windows Support</a></li></ul></li><li><a href="migration81.php">Migrating from PHP 8.0.x to PHP 8.1.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration81.new-features.php">New Features</a></li><li><a href="migration81.new-classes.php">New Classes and Interfaces</a></li><li><a href="migration81.new-functions.php">New Functions</a></li><li><a href="migration81.constants.php">New Global Constants</a></li><li><a href="migration81.incompatible.php">Backward Incompatible Changes</a></li><li><a href="migration81.deprecated.php">Deprecated Features</a></li><li><a href="migration81.other-changes.php">Other Changes</a></li></ul></li><li><a href="migration80.php">Migrating from PHP 7.4.x to PHP 8.0.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration80.new-features.php">New Features</a></li><li><a href="migration80.incompatible.php">Backward Incompatible Changes</a></li><li><a href="migration80.deprecated.php">Deprecated Features</a></li><li><a href="migration80.other-changes.php">Other Changes</a></li></ul></li><li><a href="migration74.php">Migrating from PHP 7.3.x to PHP 7.4.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration74.new-features.php">New Features</a></li><li><a href="migration74.new-classes.php">New Classes and Interfaces</a></li><li><a href="migration74.new-functions.php">New Functions</a></li><li><a href="migration74.constants.php">New Global Constants</a></li><li><a href="migration74.incompatible.php">Backward Incompatible Changes</a></li><li><a href="migration74.deprecated.php">Deprecated Features</a></li><li><a href="migration74.removed-extensions.php">Removed Extensions</a></li><li><a href="migration74.other-changes.php">Other Changes</a></li><li><a href="migration74.windows-support.php">Windows Support</a></li></ul></li><li><a href="migration73.php">Migrating from PHP 7.2.x to PHP 7.3.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration73.new-features.php">New Features</a></li><li><a href="migration73.new-functions.php">New Functions</a></li><li><a href="migration73.constants.php">New Global Constants</a></li><li><a href="migration73.incompatible.php">Backward Incompatible Changes</a></li><li><a href="migration73.deprecated.php">Deprecated Features</a></li><li><a href="migration73.other-changes.php">Other Changes</a></li><li><a href="migration73.windows-support.php">Windows Support</a></li></ul></li><li><a href="migration72.php">Migrating from PHP 7.1.x to PHP 7.2.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration72.new-features.php">New features</a></li><li><a href="migration72.new-functions.php">New functions</a></li><li><a href="migration72.constants.php">New global constants</a></li><li><a href="migration72.incompatible.php">Backward incompatible changes</a></li><li><a href="migration72.deprecated.php">Deprecated features in PHP 7.2.x</a></li><li><a href="migration72.other-changes.php">Other changes</a></li></ul></li><li><a href="migration71.php">Migrating from PHP 7.0.x to PHP 7.1.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration71.new-features.php">New features</a></li><li><a href="migration71.new-functions.php">New functions</a></li><li><a href="migration71.constants.php">New global constants</a></li><li><a href="migration71.incompatible.php">Backward incompatible changes</a></li><li><a href="migration71.deprecated.php">Deprecated features in PHP 7.1.x</a></li><li><a href="migration71.changed-functions.php">Changed functions</a></li><li><a href="migration71.other-changes.php">Other changes</a></li><li><a href="migration71.windows-support.php">Windows Support</a></li></ul></li><li><a href="migration70.php">Migrating from PHP 5.6.x to PHP 7.0.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration70.incompatible.php">Backward incompatible changes</a></li><li><a href="migration70.new-features.php">New features</a></li><li><a href="migration70.deprecated.php">Deprecated features in PHP 7.0.x</a></li><li><a href="migration70.changed-functions.php">Changed functions</a></li><li><a href="migration70.new-functions.php">New functions</a></li><li><a href="migration70.classes.php">New Classes and Interfaces</a></li><li><a href="migration70.constants.php">New Global Constants</a></li><li><a href="migration70.sapi-changes.php">Changes in SAPI Modules</a></li><li><a href="migration70.removed-exts-sapis.php">Removed Extensions and SAPIs</a></li><li><a href="migration70.other-changes.php">Other Changes</a></li></ul></li><li><a href="migration56.php">Migrating from PHP 5.5.x to PHP 5.6.x</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="migration56.incompatible.php">Backward incompatible changes</a></li><li><a href="migration56.new-features.php">New features</a></li><li><a href="migration56.deprecated.php">Deprecated features in PHP 5.6.x</a></li><li><a href="migration56.changed-functions.php">Changed functions</a></li><li><a href="migration56.new-functions.php">New functions</a></li><li><a href="migration56.openssl.php">OpenSSL changes in PHP 5.6.x</a></li><li><a href="migration56.extensions.php">Other changes to extensions</a></li><li><a href="migration56.constants.php">New global constants</a></li></ul></li><li><a href="debugger.php">Debugging in PHP</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="debugger-about.php">About debugging in PHP</a></li></ul></li><li><a href="configure.php">Configure options</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="configure.about.php">List of core configure options</a></li></ul></li><li><a href="ini.php">php.ini directives</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="ini.list.php">List of php.ini directives</a></li><li><a href="ini.sections.php">List of php.ini sections</a></li><li><a href="ini.core.php">Description of core php.ini directives</a></li></ul></li><li><a href="extensions.php">Extension List/Categorization</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="extensions.alphabetical.php">Alphabetical</a></li><li><a href="extensions.membership.php">Membership</a></li><li><a href="extensions.state.php">State</a></li></ul></li><li><a href="aliases.php">List of Function Aliases</a></li><li><a href="reserved.php">List of Reserved Words</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="reserved.keywords.php">List of Keywords</a></li><li><a href="reserved.classes.php">Predefined Classes</a></li><li><a href="reserved.constants.php">Predefined Constants</a></li><li><a href="reserved.other-reserved-words.php">List of other reserved words</a></li></ul></li><li><a href="resource.php">List of Resource Types</a></li><li><a href="filters.php">List of Available Filters</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="filters.string.php">String Filters</a></li><li><a href="filters.convert.php">Conversion Filters</a></li><li><a href="filters.compression.php">Compression Filters</a></li><li><a href="filters.encryption.php">Encryption Filters</a></li></ul></li><li><a href="transports.php">List of Supported Socket Transports</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="transports.inet.php">Internet Domain: TCP, UDP, SSL, and TLS</a></li><li><a href="transports.unix.php">Unix Domain: Unix and UDG</a></li></ul></li><li><a href="types.comparisons.php">PHP type comparison tables</a></li><li><a href="tokens.php">List of Parser Tokens</a></li><li><a href="userlandnaming.php">Userland Naming Guide</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="userlandnaming.globalnamespace.php">Global Namespace</a></li><li><a href="userlandnaming.rules.php">Rules</a></li><li><a href="userlandnaming.tips.php">Tips</a></li></ul></li><li><a href="about.php">About the manual</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="about.formats.php">Formats</a></li><li><a href="about.notes.php">About user notes</a></li><li><a href="about.prototypes.php">How to read a function definition (prototype)</a></li><li><a href="about.phpversions.php">PHP versions documented in this manual</a></li><li><a href="about.more.php">How to find more information about PHP</a></li><li><a href="about.howtohelp.php">How to help improve the documentation</a></li><li><a href="about.generate.php">How we generate the formats</a></li><li><a href="about.translations.php">Translations</a></li></ul></li><li><a href="cc.license.php">Creative Commons Attribution 3.0</a></li><li><a href="indexes.php">Index listing</a><ul class="chunklist chunklist_book chunklist_children"><li><a href="indexes.functions.php">Function and Method listing</a></li><li><a href="indexes.examples.php">Example listing</a></li></ul></li><li><a href="doc.changelog.php">Changelog</a></li></ul>
+      <h3>Improve This Page</h3>
+      <ul>
+        <li>Learn How To Improve This Page</li>
+        <li>Submit a Pull Request </li>
+        <li>Report a Bug</li>
+      </ul>
+
+      <h3>User Contributed Notes</h3>
+      <p>There are no user contributed notes for this page</p>
+    </section>
+  </div>
+    <nav id="navbar">
+      <header>PHP Manual</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Copyight">Copyight</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#PHP_Manual">PHP Manual</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Getting_Started">Getting Started</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Installation_and_Configuration">Installation and Configuration</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Language_Reference">Language Reference</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Security">Security</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Features">Features</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Function_Reference">Function Reference</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#FAQ">FAQ</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Appendices">Appendices</a>
+        </li>
+      </ul>
+    </nav>
+   </main>
+</body>
+
+</html>
